@@ -1,0 +1,184 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}%custom \section
+\usepackage{bibentry}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1.2in}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{3pt}
+
+\usepackage[absolute]{textpos}
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+\renewcommand\labelitemi{-}
+\setlist[itemize]{wide=0pt, topsep=0pt, before=\leavevmode\vspace{-2.5mm}}
+
+%--------------------BEGIN DOCUMENT----------------------
+
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+
+\par{\centering
+		{\Huge Aaron Webb
+	}\par}
+
+%--------------------SECTIONS-----------------------------------
+\begin{center}
+\begin{tabular}{c|c|c}
+    \href{mailto:aaron.f.webb@gmail.com}{aaron.f.webb@gmail.com} & (480) 298-8082   & \href{https://github.com/afwebb/}{https://github.com/afwebb/}
+\end{tabular}
+\end{center}
+
+\section{Qualifications}
+\begin{itemize}[leftmargin=*, topsep=2pt]
+    \setlength\itemsep{-0.25em}
+    \item Ph.D. in High Energy Particle Physics, with research emphasizing AI, deep learning, big data, and statistical analysis. Strong background in mathematics, statistics and quantitative research
+    \item Developed and implemented over 30 deep learning models for extremely large datasets which were used in published physics results, using Tensorflow, Keras, Pytorch, and XGBoost
+    %\item Significant knowledge of Machine Learning and Artificial Intelligence, including work in TensorFlow, PyTorch, Keras, and XGBoost
+    \item Extensive experience with Python, R, and C++ for data analysis and software development, writing code for 7 major published results as well as code used by over 4000 scientists
+    %\item 8 years of research experience at CERN, studying data from the ATLAS Detector at the LHC
+    %\item Strong background in scientific research, mathematics, statistics, and quantitative problem solving 
+    %\item Experience working with extremely large data sets, and with big data tools such as SQL, Hadoop, data visualization in MatPlotLib, Seaborn
+\end{itemize}
+
+\section{Education}
+\begin{tabular}{rl}
+
+    Expected & Ph.D. Candidate in Particle Physics, The University of Texas at Austin\\
+    Spring 2021 & Thesis: "Applying Deep Learning to Search for Physics Beyond the Standard \\ 
+    & Model in Higgs-Top Quark Interactions" | \small Advisor: Prof. Peter Onyisi     \vspace{2mm}\\
+    2015 & B.S. in Physics, Duke University \\
+    & Graduated with Highest Distinction \\
+    & Thesis: ``Vector Boson Scattering at the LHC'' | \small Advisor: Prof. Alfred Goshaw\\
+
+\end{tabular}
+
+\section{Skills}
+\begin{tabular}{rl}
+    Expertise: & Machine Learning, Big Data, Data Visualization, Statistical Analysis \\ & Detectors and Sensors, Advanced Mathematics, Technical Writing \\
+    Machine Learning:& PyTorch, Tensorflow, Keras, ScikitLearn, H2O, XGBoost, TMVA \\
+    Programmings: & \textsc{Python}, \textsc{C++}, R, Shell, Numpy, Pandas, Git, Mathematica, ROOT, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}\\
+    
+\end{tabular}
+
+\section{Professional Development}
+\begin{itemize}[leftmargin=*, topsep=2pt]
+    \setlength\itemsep{-0.25em}
+    \item Relevant Coursework - Introduction to Supervised Learning, Statistical Models for Big Data, Bayesian Statistics, Physics of Sensors
+    \item Coursera - Deep Learning Specialization, Tensorflow for Artificial Intelligence, Data Structures and Algorithms in Python, SQL for Beginners 
+    %\item Machine Learning Projects - Scored in the top 5\% of submissions for a credit fraud detection challenge, top 10\% for a ad optimizer challenge, using combinations of BDTs and Neural Networks.
+    \item Personal Projects - Used Convolutional Neural Networks in Keras, Tensorflow to achieve 98\% accuracy on MNIST handwriting dataset, over 94\% accuracy classifying images of dogs and cats
+    \item Kaggle Competitions - Scored in the top 10\% in fraud detection,  loan prediction competitions using XGBoost, Pytorch
+\end{itemize}
+
+\section{Experience}
+\vspace{2mm}
+%\textbf{High Energy Particle Physics Research} \\
+\textbf{Artificial Intelligence and Machine Learning}
+\vspace{1mm}
+\begin{itemize}[leftmargin=*, topsep=0.5pt, itemsep=0.5pt, parsep=0.pt]
+    %\item Particle Physics Research
+    %\begin{itemize}[leftmargin=*, topsep=1pt, itemsep=0.5pt, parsep=0.5pt]
+        \item Designed and implemented over 30 deep learning models used in published particle physics results, including deep neural networks, boosted decision trees
+        \item Built a neural network in PyTorch to reconstruct the momentum of the Higgs boson from detector information
+        \item Used a deep learning model in Tensorflow to identify which of dozens of combinations of particles originated from the decay of a Higgs Boson, Top Quark
+        \item Designed machine learning models in Keras, XGBoost to distinguish rare signal events from much larger backgrounds
+        %\item Used a variety of machine learning tools in my research, including PyTorch, Tensorflow, Keras, SciKitLearn and XGBoost 
+        \item Produced hundred of plots in MatPlotLib, Seaborn, and ROOT visualizing data and evaluating performance of machine learning models 
+        \item Developed a custom pipeline for using industry standard AI tools within the framework of physics analyses 
+    %\end{itemize}
+    
+    %\item Personal Projects 
+    %\begin{itemize}[leftmargin=*, topsep=1pt, itemsep=0.5pt, parsep=0.5pt]
+        %\item Computer vision - Used Convolutional Neural Networks (CNN) to achieve 98\% accuracy on MNIST handwriting dataset, over 93\% accuracy classifying images of dogs and cats
+        %\item Deep Learning - Scored in the top 10\% in fraud detection,  loan prediction kaggle competitions 
+        %\item Wrote the code for a neural network using stochastic gradient descent from scratch in python
+    %\end{itemize}
+\end{itemize}
+
+\textbf{Statistical Analysis and Big Data}
+\vspace{2mm}
+\begin{itemize}[leftmargin=*, topsep=1pt, itemsep=0.5pt, parsep=0.5pt]
+    \item Performed full data analysis for three major papers, generating and validating TBs of Monte Carlo simulations, and performed maximum likelihood fits which accounted for dozens of backgrounds, over 200 sources of systematic uncertainty
+    \item Eight years of experience in physics research, performing data and statistical analysis used in seven published scientific results, and writing thousands of lines of code, primarily in C++ and python 
+    %\item Ran maximum likelihood fits using TBs of data, accounting for over 200 sources of systematic uncertainty for a single result
+\end{itemize}
+
+\textbf{Software Development}
+\vspace{2mm}
+%\begin{itemize}[leftmargin=*]
+%    \item Monte Carlo Simulation Generator
+\begin{itemize}[leftmargin=*, topsep=1pt, itemsep=0.5pt, parsep=0.5pt]
+    \item Wrote code in C++ and Python to generate Monte Carlo simulations and process data. Code was used by myself and others to process hundreds of terabytes of data on a distributed computing network
+    %\item Generated and extensively validated over 100 TB of Monte Carlo simulations for analysis using distributed computing systems
+    \item Responsible for maintaining and improving the backend data quality infrastructure of the ATLAS collaboration, used by over 4,000 scientists. Work included testing and deploying new releases, writing new features, and automating CI tests
+    \item Developed monitoring software in C++ and Python tracking Data Quality server responsiveness and automatically responding to down times. 
+\end{itemize}
+
+\textbf{Teaching, Mentoring, and Communication}
+\vspace{2mm}
+\begin{itemize}[leftmargin=*, topsep=1pt, itemsep=0.5pt, parsep=0.5pt]
+    \item Presented the results of my work at 6 major conferences, as well as dozens of talks in ATLAS research meetings
+    \item Primary instructor of an inquiry based physics course for 4 semesters - responsible for teaching, designing the course curriculum, and writing all course materials. Received a 4.9/5 average rating from student evaluations
+    \item Managed 3 Teaching Assistants as an instructor, and mentored several undergraduate students in physics research
+\end{itemize}
+\vspace{2mm}
+
+%------- end experience --------------
+
+
+     
+%\end{longtable}
+
+%Section: Scholarships and additional info
+%\section{Awards and Recognition}
+%\begin{tabular}{clll}
+%    & Summer Fellowship Recipient & 2019 & The University of Texas at Austin 
+%    \\
+%    & Ph.D. Candidacy & 2017 & The University of Texas at Austin  \\
+%    & ATLAS Authorship Status & 2016 & The ATLAS Collaboration \\
+%    & Graduation with Highest Distinction & 2015 & Duke University \\
+%    & NSF REU Grant Recipient & 2014 & TUNL  \\
+%    & Dean’s Summer Research Fellow & 2013 & Duke Trinity College   \\
+%    & Salutatorian of 900 person class & 2012 & Mesquite High School \\
+%    & National Merit Scholar & 2011 & National Merit Scholarship Co.  \\
+%    & National AP Scholar & 2011 & The College Board  \\
+%\end{tabular}
+
+%\section*{Publications}
+%\nobibliography{publications}
+%\bibliographystyle{unsrt}
+%\vspace{-0.9in}
+%\begin{itemize}[leftmargin=0.3in]
+%    \item \bibentry{ttH_80}
+%    \item \bibentry{DQ}
+%    \item \bibentry{cjets}
+%    \item \bibentry{ttH_paper}
+%    \item \bibentry{raretop}
+%\end{itemize}
+
+\end{document}
